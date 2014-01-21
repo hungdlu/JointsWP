@@ -19,7 +19,7 @@ taxonomy-shoes.php
 			
 				<div id="inner-content" class="row clearfix">
 			
-				    <div id="main" class="large-8 medium-8 columns first clearfix" role="main">
+				    <div id="main" class="large-9 medium-8 columns first clearfix" role="main">
 				
 					    <h1 class="archive-title h2"><span><?php _e("Posts Categorized:", "jointstheme"); ?></span> <?php single_cat_title(); ?></h1>
 
