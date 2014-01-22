@@ -37,23 +37,35 @@
 	</head>
 
 	<body <?php body_class(); ?>>
-
-	<div class="off-canvas-wrap">
-		<div class="inner-wrap">
-			<div id="container">
 	
 				<header class="header" role="banner">
 	
 					<div id="inner-header" class="row">
 						<div class="large-12 columns">
-							<p id="logo"><a href="<?php echo home_url(); ?>" rel="nofollow"><?php bloginfo('name'); ?></a></p>
-							<p class="description"><?php  bloginfo('description'); ?></p>
+							<div id="aulogo">
+							 	<a href="http://www.au.edu"><img src='<?php echo get_template_directory_uri(); ?>/library/images/au-logo.png' width='87' height='87' alt='Assumption University' /></a>
+							</div>
+							<div id="gsellogo">
+									<a href="http://www.elearning.au.edu"><img src='<?php echo get_template_directory_uri(); ?>/library/images/gsel-logo.png' width='72' height='74' alt='Assumption University' /></a>
+							</div>			 
+
+							<!--<p id="logo"><a href="<?php echo home_url(); ?>" rel="nofollow"><?php bloginfo('name'); ?></a></p>
+							<p class="description"><?php  bloginfo('description'); ?></p>-->
 						</div>
 						
-						<?php get_template_part( 'partials/nav', 'topbar' ); ?>
-						
-						<?php get_template_part( 'partials/nav', 'offcanvas' ); ?>
 						
 					</div> <!-- end #inner-header -->
 	
 				</header> <!-- end header -->
+
+	<div class="off-canvas-wrap">
+		<div class="inner-wrap">
+			<div id="container">				
+
+				<div id="navbar">
+
+					<?php get_template_part( 'partials/nav', 'topbar' ); ?>
+					
+					<?php get_template_part( 'partials/nav', 'offcanvas' ); ?>
+
+				</div>

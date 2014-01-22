@@ -139,27 +139,37 @@ HEADER STYLES
 *********************/
 
 .header {
-	margin-bottom: 20px;
+	background: #ff6600;
 		#inner-header {
-			li {
-				list-style: none;
-			}
-			.off-canvas-list {
-				ul {
-					margin-left: 0;
-					.dropdown {
-						margin-left: 20px;
-					}
-				}
-			}
+      background:url(../images/header-background.png) left top no-repeat;
+      height:117px;
+      overflow: hidden;
+      position: relative;
 		}
 }
 
-	#logo {
-    margin: 0.57em 0 0.17em;
-    font-size: $h1-font-size;
-    font-weight: bold;
+  #navbar {
+    li {
+      list-style: none;
     }
+    .off-canvas-list {
+      ul {
+        margin-left: 0;
+        .dropdown {
+          margin-left: 20px;
+        }
+      }
+    }    
+  }
+  
+  #aulogo{
+    padding: 0.85em 0 0 0.1em;
+    float:left;
+  }
+  #gsellogo{
+    padding: 1.2em 0 0 1em;
+    float:left;
+  }
 
 /*********************
 NAVIGATION STYLES
