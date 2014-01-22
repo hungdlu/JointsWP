@@ -1,4 +1,4 @@
-<div class="large-12 columns show-for-small-only">
+<div class="large-12 columns show-for-small-only" style="padding:0px!important;">
 	<div class="contain-to-grid">
 		<nav class="tab-bar">
 			<section class="middle tab-bar-section">
