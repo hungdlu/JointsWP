@@ -29,10 +29,10 @@ single-bookmarks.php
 							    <h1 class="single-title custom-post-type-title"><?php the_title(); ?></h1>
 						    </header> <!-- end article header -->
 					
-                <section class="entry-content clearfix" itemprop="articleBody">
-  <?php the_content(); ?>
-<?php wp_link_pages(); ?>
-</section> <!-- end article section -->
+			                <section class="entry-content clearfix" itemprop="articleBody">
+								<?php the_content(); ?>
+								<?php wp_link_pages(); ?>
+							</section> <!-- end article section -->
 						
 						    <footer class="article-header">
 							    <p class="tags"><?php echo get_the_term_list( get_the_ID(), 'custom_tag', '<span class="tags-title">' . __('Custom Tags:', 'jointstheme') . '</span> ', ', ' ) ?></p>
