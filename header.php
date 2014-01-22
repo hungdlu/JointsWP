@@ -42,15 +42,9 @@
 	
 					<div id="inner-header" class="row">
 						<div class="large-12 columns">
-							<div id="aulogo">
-							 	<a href="http://www.au.edu"><img src='<?php echo get_template_directory_uri(); ?>/library/images/au-logo.png' width='87' height='87' alt='Assumption University' /></a>
-							</div>
-							<div id="gsellogo">
-									<a href="http://www.elearning.au.edu"><img src='<?php echo get_template_directory_uri(); ?>/library/images/gsel-logo.png' width='72' height='74' alt='Assumption University' /></a>
-							</div>			 
 
-							<!--<p id="logo"><a href="<?php echo home_url(); ?>" rel="nofollow"><?php bloginfo('name'); ?></a></p>
-							<p class="description"><?php  bloginfo('description'); ?></p>-->
+							<img src='<?php echo get_template_directory_uri(); ?>/library/images/gsel-logo-full.png'  alt='Graduate School of eLearning' />
+							
 						</div>
 						
 						

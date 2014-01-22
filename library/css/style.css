@@ -4516,14 +4516,14 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Open Sans", "Open Sans", Arial, sans-serif;
   font-weight: 300;
   font-style: normal;
-  color: #222222;
+  color: #e10103;
   text-rendering: optimizeLegibility;
   margin-top: 0.2rem;
   margin-bottom: 0.5rem;
   line-height: 1.4; }
   h1 small, h2 small, h3 small, h4 small, h5 small, h6 small {
     font-size: 60%;
-    color: #6f6f6f;
+    color: #fe7d7e;
     line-height: 0; }
 
 h1 {
@@ -4546,7 +4546,7 @@ h6 {
 
 .subheader {
   line-height: 1.4;
-  color: #6f6f6f;
+  color: #fe7d7e;
   font-weight: 300;
   margin-top: 0.2rem;
   margin-bottom: 0.5rem; }
@@ -4589,7 +4589,7 @@ dl {
   font-family: inherit; }
 
 ul {
-  margin-left: 1.1rem; }
+  margin-left: 3rem; }
   ul.no-bullet {
     margin-left: 0; }
     ul.no-bullet li ul,
@@ -4609,13 +4609,13 @@ ul.square li ul, ul.circle li ul, ul.disc li ul {
   list-style: inherit; }
 ul.square {
   list-style-type: square;
-  margin-left: 1.1rem; }
+  margin-left: 3rem; }
 ul.circle {
   list-style-type: circle;
-  margin-left: 1.1rem; }
+  margin-left: 3rem; }
 ul.disc {
   list-style-type: disc;
-  margin-left: 1.1rem; }
+  margin-left: 3rem; }
 ul.no-bullet {
   list-style: none; }
 
@@ -4650,21 +4650,21 @@ abbr {
 blockquote {
   margin: 0 0 1.25rem;
   padding: 0.5625rem 1.25rem 0 1.1875rem;
-  border-left: 1px solid #dddddd; }
+  border-left: none; }
   blockquote cite {
     display: block;
     font-size: 0.8125rem;
-    color: #555555; }
+    color: #fe4a4b; }
     blockquote cite:before {
       content: "\2014 \0020"; }
     blockquote cite a,
     blockquote cite a:visited {
-      color: #555555; }
+      color: #fe4a4b; }
 
 blockquote,
 blockquote p {
   line-height: 1.6;
-  color: #6f6f6f; }
+  color: #fe7d7e; }
 
 /* Microformats */
 .vcard {
@@ -5969,7 +5969,6 @@ HEADER STYLES
   background: #ff6600; }
   .header #inner-header {
     background: url(../images/header-background.png) left top no-repeat;
-    height: 117px;
     overflow: hidden;
     position: relative; }
 
@@ -5979,14 +5978,6 @@ HEADER STYLES
   margin-left: 0; }
   #navbar .off-canvas-list ul .dropdown {
     margin-left: 20px; }
-
-#aulogo {
-  padding: 0.85em 0 0 0.1em;
-  float: left; }
-
-#gsellogo {
-  padding: 1.2em 0 0 1em;
-  float: left; }
 
 /*********************
 NAVIGATION STYLES
