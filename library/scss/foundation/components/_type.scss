@@ -6,7 +6,7 @@ $include-html-type-classes: $include-html-classes !default;
 $header-font-family: join("Open Sans", $body-font-family) !default;
 $header-font-weight: 300 !default;
 $header-font-style: normal !default;
-$header-font-color: #222 !default;
+$header-font-color: #e10103 !default;
 $header-line-height: 1.4 !default;
 $header-top-margin: .2rem !default;
 $header-bottom-margin: .5rem !default;
@@ -60,7 +60,7 @@ $hr-margin: rem-calc(20) !default;
 
 // We use these to style lists
 $list-style-position: outside !default;
-$list-side-margin: 1.1rem !default;
+$list-side-margin: 3.0rem !default;
 $list-ordered-side-margin: 1.4rem !default;
 $list-side-margin-no-bullet: 0 !default;
 $list-nested-margin: rem-calc(20) !default;
@@ -71,7 +71,7 @@ $definition-list-margin-bottom: rem-calc(12) !default;
 // We use these to style blockquotes
 $blockquote-font-color: lighten($header-font-color, 30%) !default;
 $blockquote-padding: rem-calc(9 20 0 19) !default;
-$blockquote-border: 1px solid #ddd !default;
+$blockquote-border: none!default; //1px solid #ddd 
 $blockquote-cite-font-size: rem-calc(13) !default;
 $blockquote-cite-font-color: lighten($header-font-color, 20%) !default;
 $blockquote-cite-link-color: $blockquote-cite-font-color !default;
