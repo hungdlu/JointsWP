@@ -44,6 +44,8 @@
 					    <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 					
 					    	<?php get_template_part( 'partials/loop', 'archive' ); ?>
+
+					    	<?php if( ($wp_query->current_post + 1) < ($wp_query->post_count) ) { echo("<hr />"); } ?>
 					
 					    <?php endwhile; ?>		
 					

@@ -24,7 +24,7 @@ taxonomy-shoes.php
 					    <h1 class="archive-title h2"><?php single_cat_title(); ?></h1>
 
 					    <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-					
+				
 					    <article id="post-<?php the_ID(); ?>" <?php post_class('clearfix'); ?> role="article">
 						
 						    <header class="article-header">
@@ -34,7 +34,22 @@ taxonomy-shoes.php
 						    </header> <!-- end article header -->
 					
 						    <section class="entry-content">
-							    <?php the_excerpt('<span class="read-more">' . __('Read More &raquo;', 'jointstheme') . '</span>'); ?>
+
+						    	<div class="row">
+						    		
+						    		<div class="medium-4 large-3 columns">
+						    		
+						    			<?php the_post_thumbnail( 'joints-thumb-600' ); ?>
+						    		
+						    		</div>
+									
+									<div class="medium-8 large-9 columns">
+									
+										<?php the_excerpt('<span class="read-more">' . __('Read More &raquo;', 'jointstheme') . '</span>'); ?>		
+									
+									</div>
+								
+								</div>
 					
 						    </section> <!-- end article section -->
 						
@@ -45,6 +60,8 @@ taxonomy-shoes.php
 						    </footer> <!-- end article footer -->
 					
 					    </article> <!-- end article -->
+
+					    <?php if( ($wp_query->current_post + 1) < ($wp_query->post_count) ) { echo("<hr />"); } ?>
 					
 					    <?php endwhile; ?>	
 					
