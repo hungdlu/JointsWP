@@ -35,7 +35,11 @@ single-bookmarks.php
 							</section> <!-- end article section -->
 						
 						    <footer class="article-header">
+							    
 							    <p class="tags"><?php echo get_the_term_list( get_the_ID(), 'custom_tag', '<span class="tags-title">' . __('Custom Tags:', 'jointstheme') . '</span> ', ', ' ) ?></p>
+
+						    	<a href="../lms/course/view.php?id=2" class="button">Enroll This Course</a>
+
 						    </footer> <!-- end article footer -->
 						
 						    <?php comments_template(); ?>
@@ -46,7 +50,7 @@ single-bookmarks.php
 					
 					    <?php else : ?>
 					
-                <?php get_template_part( 'partials/missing', 'content' ); ?>
+                			<?php get_template_part( 'partials/missing', 'content' ); ?>
 					
 					    <?php endif; ?>
 			
