@@ -66,7 +66,7 @@ function custom_post_example() {
 	*/
 	
 	// now let's add course categories (these act like categories)
-    register_taxonomy( 'custom_cat', 
+    register_taxonomy( 'course_cat', 
     	array('course'), /* if you change the name of register_post_type( 'course', then you have to change this */
     	array('hierarchical' => true,     /* if this is true, it acts like categories */             
     		'labels' => array(
@@ -89,7 +89,7 @@ function custom_post_example() {
     );   
     
 	// now let's add custom tags (these act like categories)
-    register_taxonomy( 'custom_tag', 
+    register_taxonomy( 'course_tag', 
     	array('course'), /* if you change the name of register_post_type( 'course', then you have to change this */
     	array('hierarchical' => false,    /* if this is false, it acts like tags */                
     		'labels' => array(
