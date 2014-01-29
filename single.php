@@ -1,3 +1,9 @@
+<?php
+/*
+	Show single normal Post like News, Annoucement
+*/
+?>
+
 <?php get_header(); ?>
 			
 			<div id="content">

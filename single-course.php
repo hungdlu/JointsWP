@@ -1,5 +1,11 @@
 <?php
 /*
+	Show single course
+*/
+?>
+
+<?php
+/*
 This is the custom post type post template.
 If you edit the post type name, you've got
 to change the name of this template to
@@ -26,7 +32,7 @@ single-bookmarks.php
 					    <article id="post-<?php the_ID(); ?>" <?php post_class('clearfix'); ?> role="article">
 						
 						    <header class="article-header">
-							    <h1 class="single-title custom-post-type-title"><?php the_title(); ?></h1>
+							    <h1 class="single-title custom-post-type-title"><?php the_title(); ?> (<?php echo get_post_meta($post->ID, 'Course Code', true);?>)</h1>
 						    </header> <!-- end article header -->
 					
 			                <section class="entry-content clearfix" itemprop="articleBody">
@@ -36,9 +42,9 @@ single-bookmarks.php
 						
 						    <footer class="article-header">
 							    
-							    <p class="tags"><?php echo get_the_term_list( get_the_ID(), 'custom_tag', '<span class="tags-title">' . __('Custom Tags:', 'jointstheme') . '</span> ', ', ' ) ?></p>
+							    <p class="tags"><?php echo get_the_term_list( get_the_ID(), 'course_tag', '<span class="tags-title">' . __('Tags:', 'jointstheme') . '</span> ', ', ' ) ?></p>
 
-						    	<a href="../lms/course/view.php?id=2" class="button">Enroll This Course</a>
+						    	<a href="<?php echo get_post_meta($post->ID, 'Link', true);?>" class="button">Enroll This Course</a>
 
 						    </footer> <!-- end article footer -->
 						
