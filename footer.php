@@ -17,10 +17,10 @@
 					<div class="small-12 medium-4 large-4 columns footer-entry">
 						<h2 class="footer-entry">Contact Information</h2>
 						<p>
-							Telephone	+66 (0) 2723-2944 </br>
-							Telephone	+66 (0) 2723-2960 </br>
-							Fax	 		+66 (0) 2723-2959 </br>
-							Email		eLearning@au.edu </br>
+							Telephone:	+66 (0) 2723-2944 </br>
+							Telephone:	+66 (0) 2723-2960 </br>
+							Fax: 		+66 (0) 2723-2959 </br>
+							Email:		eLearning@au.edu </br>
 						</p>
 					</div>
 
