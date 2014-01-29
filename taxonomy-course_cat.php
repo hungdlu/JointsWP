@@ -1,15 +1,6 @@
 <?php
 /*
-This is the custom post type taxonomy template.
-If you edit the custom taxonomy name, you've got
-to change the name of this template to
-reflect that name change.
-
-i.e. if your custom taxonomy is called
-register_taxonomy( 'shoes',
-then your single template should be
-taxonomy-shoes.php
-
+	Show the list of courses
 */
 ?>
 
@@ -29,7 +20,7 @@ taxonomy-shoes.php
 						
 						    <header class="article-header">
 							
-							    <h3 class="h2"><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h3>
+							    <h3 class="h2"><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?> (<?php echo get_post_meta($post->ID, 'Course Code', true);?>)</a></h3>
 						
 						    </header> <!-- end article header -->
 					
@@ -37,13 +28,13 @@ taxonomy-shoes.php
 
 						    	<div class="row">
 						    		
-						    		<div class="medium-4 large-3 columns">
+						    		<div class="medium-4 large-4 columns">
 						    		
 						    			<?php the_post_thumbnail( 'joints-thumb-600' ); ?>
 						    		
 						    		</div>
 									
-									<div class="medium-8 large-9 columns">
+									<div class="medium-8 large-8 columns">
 									
 										<?php the_excerpt('<span class="read-more">' . __('Read More &raquo;', 'jointstheme') . '</span>'); ?>		
 									
@@ -54,8 +45,8 @@ taxonomy-shoes.php
 						    </section> <!-- end article section -->
 						
 						    <footer class="article-footer">
-                 				<p class="byline"><?php printf(__('Posted on <time class="updated" datetime="%1$s" pubdate>%2$s</time>', 'jointstheme'), get_the_time('Y-m-j'), get_the_time(get_option('date_format')));?></p>
-                 				
+						    	
+                 				<p class="byline"><?php printf(__('Posted on <time class="updated" datetime="%1$s" pubdate>%2$s</time>', 'jointstheme'), get_the_time('Y-m-j'), get_the_time(get_option('date_format')));?></p>                 				
 						
 						    </footer> <!-- end article footer -->
 					
