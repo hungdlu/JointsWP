@@ -7,7 +7,7 @@ Template Name: Full Width (No Sidebar)
 <?php get_header(); ?>
 			
 			<div id="content">
-			
+			Template Name: Full Width (No Sidebar)
 				<div id="inner-content" class="row clearfix">
 			
 				    <div id="main" class="large-12 medium-12 columns" role="main">

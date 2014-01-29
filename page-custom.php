@@ -7,7 +7,7 @@ Template Name: Custom Page Example
 <?php get_header(); ?>
 			
 			<div id="content">
-			
+			Custom Page Example 
 				<div id="inner-content" class="row clearfix">
 			
 				    <div id="main" class="large-9 medium-8 columns first clearfix" role="main">
