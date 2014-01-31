@@ -6007,7 +6007,8 @@ POSTS & CONTENT STYLES
 /* style by tag (i.e. tag-news) */
 /* post meta */
 .byline {
-  color: #999; }
+  color: #999;
+  text-align: right; }
 
 /* entry content */
 .entry-content {
@@ -6282,7 +6283,7 @@ MEDIUM
   *********************/
   .widget {
     padding: 0 10px;
-    margin: 2.2em 0; }
+    margin: 1.0em 0; }
 
   /*********************
   FOOTER STYLES
