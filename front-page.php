@@ -15,13 +15,7 @@
 								    <?php the_content(); ?>
 								    <?php wp_link_pages(); ?>
 								</section> <!-- end article section -->
-													
-								<footer class="article-footer">
-									<p class="clearfix"><?php the_tags('<span class="tags">' . __('Tags:', 'jointstheme') . '</span> ', ', ', ''); ?></p>
-								</footer> <!-- end article footer -->
-													    
-								<?php comments_template(); ?>
-												
+																									    
 							</article> <!-- end article -->
 					    					
 					    <?php endwhile; else : ?>
@@ -29,8 +23,34 @@
 					   		<?php get_template_part( 'partials/not', 'found' ); ?>
 
 					    <?php endif; ?>
+
+					    <div class="row">
+					    	<div class="medium-6 columns">
+
+					    		<h1>News</h1>
+
+								<?php query_posts('cat=4'.'&orderby=date&order=dec&posts_per_page=5');?>
+								<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+								<p><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></p>
+								<?php endwhile; else: endif; ?>
+
+					    	</div>
+
+					    	<div class="medium-6 columns">
+					    	
+					    		<h1>Annoucements</h1>
+
+								<?php query_posts('cat=6'.'&orderby=date&order=dec&posts_per_page=5');?>
+								<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+								<p><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></p>
+								<?php endwhile; else: endif; ?>
+
+					    	</div>
+					    </div>
 			
     				</div> <!-- end #main -->
+
+    				<hr class="show-for-small-only" />
     
 				    <?php get_sidebar(); ?>
 				    
