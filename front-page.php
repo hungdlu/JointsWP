@@ -4,7 +4,7 @@
 			
 				<div id="inner-content" class="row clearfix">
 			
-				    <div id="main" class="large-9 medium-8 columns" role="main">
+				    <div id="main" class="medium-8 columns" role="main">
 
 					    <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 					
@@ -24,29 +24,43 @@
 
 					    <?php endif; ?>
 
-					    <div class="row">
-					    	<div class="medium-6 columns">
 
-					    		<h1>News</h1>
+			    		<h2>Latest News & Events</h2>
 
-								<?php query_posts('cat=4'.'&orderby=date&order=dec&posts_per_page=5');?>
-								<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-								<p><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></p>
-								<?php endwhile; else: endif; ?>
+						<?php query_posts('cat=4'.'&orderby=date&order=dec&posts_per_page=5');?>
+						<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+							<div class="row">
+								<div class="small-12 columns">
 
-					    	</div>
+									<h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+									<p class="byline"><?php printf(__('Posted on <time class="updated" datetime="%1$s" pubdate>%2$s</time>', 'jointstheme'), get_the_time('Y-m-j'), get_the_time(get_option('date_format')));?></p>
 
-					    	<div class="medium-6 columns">
+								</div>
+							</div>
+
+							<div class="row">
+
+								<div class="medium-4 large-4 columns">
+
+									<?php the_post_thumbnail( 'joints-thumb-600' ); ?>
+
+								</div>
+
+								<div class="medium-8 large-8 columns">								
+
+									<?php the_excerpt('<span class="read-more">' . __('Read More &raquo;', 'jointstheme') . '</span>'); ?>
+
+									<p class="readmore"><a href="<?php the_permalink(); ?>">More detail</a></p>
+
+								</div>
+
+							</div>					
+
+							</br>
 					    	
-					    		<h1>Annoucements</h1>
-
-								<?php query_posts('cat=6'.'&orderby=date&order=dec&posts_per_page=5');?>
-								<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-								<p><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></p>
-								<?php endwhile; else: endif; ?>
-
-					    	</div>
-					    </div>
+					    	<?php if( ($wp_query->current_post + 1) < ($wp_query->post_count) ) { echo("<hr />"); } ?>
+					    	
+						<?php endwhile; else: endif; ?>
 			
     				</div> <!-- end #main -->
 

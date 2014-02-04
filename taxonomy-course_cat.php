@@ -10,9 +10,9 @@
 			
 				<div id="inner-content" class="row clearfix">
 			
-				    <div id="main" class="large-9 medium-8 columns first clearfix" role="main">
+				    <div id="main" class="medium-8 columns first clearfix" role="main">
 				
-					    <h1 class="archive-title h2"><?php single_cat_title(); ?></h1>
+					    <h2 class="archive-title h2"><?php single_cat_title(); ?></h2>
 
 					    <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 				
@@ -28,13 +28,13 @@
 
 						    	<div class="row">
 						    		
-						    		<div class="medium-4 large-4 columns">
+						    		<div class="medium-4 columns">
 						    		
 						    			<?php the_post_thumbnail( 'joints-thumb-600' ); ?>
 						    		
 						    		</div>
 									
-									<div class="medium-8 large-8 columns">
+									<div class="medium-8 columns">
 									
 										<?php the_excerpt('<span class="read-more">' . __('Read More &raquo;', 'jointstheme') . '</span>'); ?>		
 									
