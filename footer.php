@@ -3,7 +3,7 @@
 				<div class="row clearfix">
 					<hr>
 					<div class="small-12 medium-4 large-4 columns footer-entry">
-						<h2 class="subheader">Address</h2>
+						<h3>Address</h3>
 						<p>
 							Graduate School of eLearning, </br>
 							Assumption University of Thailand, </br>
@@ -15,7 +15,7 @@
 					</div>
 
 					<div class="small-12 medium-4 large-4 columns footer-entry">
-						<h2 class="subheader">Contact Info</h2>
+						<h3>Contact Info</h3>
 						<p>
 							Telephone:	+66 (0) 2723-2944 </br>
 							Telephone:	+66 (0) 2723-2960 </br>
@@ -25,7 +25,7 @@
 					</div>
 
 					<div class="small-12 medium-4 large-4 columns footer-entry">
-						<h2 class="subheader">Related Links</h2>
+						<h3>Related Links</h3>
 						<p>
 							Assumption University </br>
 							M.S. (Management) </br>
