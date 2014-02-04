@@ -1,7 +1,7 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class('clearfix'); ?> role="article" itemscope itemtype="http://schema.org/BlogPosting">
 						
 	<header class="article-header">	
-		<h1 class="entry-title single-title" itemprop="headline"><?php the_title(); ?></h1>
+		<h2 class="entry-title single-title" itemprop="headline"><?php the_title(); ?></h2>
 			<p class="byline"><?php printf(__('Posted on <time class="updated" datetime="%1$s" pubdate>%2$s</time>', 'jointstheme'), get_the_time('Y-m-j'), get_the_time(get_option('date_format')));?></p>		
     </header> <!-- end article header -->
 					

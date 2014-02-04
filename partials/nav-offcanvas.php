@@ -2,7 +2,7 @@
 	<div class="contain-to-grid">
 		<nav class="tab-bar">
 			<section class="middle tab-bar-section">
-				<h1 class="title"><?php bloginfo('name'); ?></h1>
+				<h1 class="title">GSeL Menu</h1>
 			</section>
 			<section class="left-small">
 				<a class="left-off-canvas-toggle menu-icon" ><span></span></a>
