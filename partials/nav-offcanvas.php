@@ -14,6 +14,10 @@
 <aside class="left-off-canvas-menu show-for-small-only">
 	<ul class="off-canvas-list">
 		<li><label>Navigation</label></li>
+		<li>
+			<a href="#" data-reveal-id="myModalLogin" data-reveal>Login</a>
+		</li>
+
 			<?php joints_main_nav(); ?>    
 	</ul>
 </aside>
