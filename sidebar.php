@@ -1,3 +1,5 @@
+   				<hr class="show-for-small-only" />
+
 				<div id="sidebar1" class="sidebar medium-4 columns" role="complementary">
 
 					<?php if ( is_active_sidebar( 'sidebar1' ) ) : ?>
