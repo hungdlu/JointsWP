@@ -10,8 +10,8 @@
 					
 							<article id="post-<?php the_ID(); ?>" <?php post_class('clearfix'); ?> role="article" itemscope itemtype="http://schema.org/BlogPosting">
 												
-							    <section class="entry-content clearfix" itemprop="articleBody">
-							    	<br/>
+								<section class="entry-content clearfix" itemprop="articleBody">
+									<br/>
 								    <?php the_content(); ?>
 								    <?php wp_link_pages(); ?>
 								</section> <!-- end article section -->
@@ -50,7 +50,7 @@
 
 									<?php the_excerpt('<span class="read-more">' . __('Read More &raquo;', 'jointstheme') . '</span>'); ?>
 
-									<p class="readmore"><a href="<?php the_permalink(); ?>">More detail</a></p>
+									<p class="text-right"><a href="<?php the_permalink(); ?>">More detail</a></p>
 
 								</div>
 
@@ -63,9 +63,7 @@
 						<?php endwhile; else: endif; ?>
 			
     				</div> <!-- end #main -->
-
-    				<hr class="show-for-small-only" />
-    
+   
 				    <?php get_sidebar(); ?>
 				    
 				</div> <!-- end #inner-content -->
