@@ -4,7 +4,7 @@
 			
 				<div id="inner-content" class="row clearfix">
 				
-				    <div id="main" class="large-9 medium-8 columns first clearfix" role="main">
+				    <div id="main" class="medium-8 columns first clearfix" role="main">
 				
 						<h1 class="archive-title h2"><?php post_type_archive_title(); ?></h1>
 

@@ -25,7 +25,7 @@ single-bookmarks.php
 			
 				<div id="inner-content" class="row clearfix">
 			
-				    <div id="main" class="large-9 medium-8 columns first clearfix" role="main">
+				    <div id="main" class="medium-8 columns first clearfix" role="main">
 
 					    <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 					
@@ -40,10 +40,8 @@ single-bookmarks.php
 								<?php wp_link_pages(); ?>
 							</section> <!-- end article section -->
 						
-						    <footer class="article-header">
+						    <footer class="article-header text-center">
 							    
-							    <p class="tags"><?php echo get_the_term_list( get_the_ID(), 'course_tag', '<span class="tags-title">' . __('Tags:', 'jointstheme') . '</span> ', ', ' ) ?></p>
-
 						    	<a href="<?php echo get_post_meta($post->ID, 'Link', true);?>" class="button">Enroll This Course</a>
 
 						    </footer> <!-- end article footer -->
