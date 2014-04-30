@@ -31,7 +31,8 @@
 
 		<div class="row">
 			<label>Password</label>
-			<input type="password" id="password" placeholder="Password">
+			<input name='password' type="password" id="password" placeholder="Password" required>
+			<small class="error">Password should not this simple!</small>
 		</div>
 
 		<div class="row">

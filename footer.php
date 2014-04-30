@@ -20,19 +20,22 @@
 							Telephone:	+66 (0) 2723-2944 </br>
 							Telephone:	+66 (0) 2723-2960 </br>
 							Fax: 		+66 (0) 2723-2959 </br>
-							Email:		eLearning@au.edu </br>
-						</p>
+							Email:		<a href="mailto:eLearning@au.edu">eLearning@au.edu</a> </br>
+							<a href="https://www.facebook.com/elearning.au.edu"><img src="http://elearning.au.edu/gsel/images/facebook-button.jpg" class='socialIcons'/></a>
+							<a href="https://twitter.com/auelearning"><img src="http://elearning.au.edu/gsel/images/twitter-button.jpg" class='socialIcons'/></a>
+							<a href="https://www.youtube.com/auelearning"><img src="http://elearning.au.edu/gsel/images/youtube-button.png" class='socialIcons'/></a>
+													</p>
 					</div>
 
 					<div class="small-12 medium-4 large-4 columns footer-entry">
 						<h3>Related Links</h3>
 						<p>
-							Assumption University </br>
-							M.S. (Management) </br>
-							M.S. (ICT) </br>
-							M.Ed. (Teaching and Technology) </br>
-							Ph.D. (eLearning Methodology) </br>
-							Ph.D. (Teaching and Technology) </br>
+							<a href="http://www.au.edu">Assumption University</a> </br>
+							<a href="http://www.elearning.au.edu/msmgt">M.S. (Management)</a> </br>
+							<a href="http://www.elearning.au.edu/sit">M.S. (ICT)</a> </br>
+							<a href="http://www.elearning.au.edu/medtt">M.Ed. (Teaching and Technology)</a> </br>
+							<a href="http://www.elearning.au.edu/phdelm">Ph.D. (eLearning Methodology)</a> </br>
+							<a href="http://www.elearning.au.edu/phdtt">Ph.D. (Teaching and Technology)</a> </br>
 						</p>
 					</div>
 
